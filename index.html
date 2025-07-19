@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Civic Nest – By Mehak Preet</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff8f0;
+      padding: 40px 20px;
+      color: #4e2600;
+      margin: 0;
+    }
+
+    h1 {
+      text-align: center;
+      color: #e65100;
+      margin-bottom: 30px;
+      font-size: 2rem;
+    }
+
+    form {
+      background: #ffffff;
+      max-width: 600px;
+      margin: auto;
+      padding: 30px 25px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(255, 111, 0, 0.1);
+      transition: box-shadow 0.3s ease-in-out;
+    }
+
+    form:hover {
+      box-shadow: 0 10px 28px rgba(255, 111, 0, 0.15);
+    }
+
+    label {
+      font-weight: 600;
+      display: block;
+      margin-top: 18px;
+      margin-bottom: 6px;
+      color: #4e2600;
+    }
+
+    select {
+      width: 100%;
+      padding: 10px;
+      font-size: 15px;
+      border-radius: 8px;
+      border: 1px solid #ffd699;
+      background-color: #fffaf2;
+      transition: border-color 0.2s ease;
+    }
+
+    select:focus {
+      border-color: #ff9800;
+      outline: none;
+    }
+
+    small {
+      display: block;
+      font-size: 12px;
+      color: #555;
+      margin-top: 2px;
+    }
+
+    button {
+      margin-top: 30px;
+      width: 100%;
+      padding: 12px 20px;
+      font-size: 16px;
+      background-color: #ff6f00;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.1s ease;
+    }
+
+    button:hover {
+      background-color: #e65100;
+      transform: scale(1.02);
+    }
+  </style>
+</head>
+<body>
+
+<h1>Civic Nest – Make Chandigarh Better, One Rating at a Time</h1>
+
+<section style="max-width: 700px; margin: 30px auto; background-color: #fff7eb; border-left: 6px solid #ffa500; padding: 20px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+  <h2 style="color: #d35400; text-align: center; margin-top: 0;">About Civic Nest</h2>
+  <p style="line-height: 1.6; font-size: 16px; color: #333;">
+    <strong>Civic Nest</strong> is a civic-tech platform empowering residents of Chandigarh to shape a safer, cleaner, and more accessible city. Through quick, anonymous ratings on key amenities like sanitation, surveillance, lighting, and accessibility — this tool captures on-ground insights from the public.
+    <br><br>
+    The data collected is shared with local authorities to spotlight areas that need improvement and to celebrate well-maintained public spaces. 
+    Your feedback directly contributes to building <strong>'Civic Nest Zones'</strong> — public areas that meet high standards of inclusivity, safety, and hygiene.
+    <br><br>
+  </p>
+</section>
+
+
+<form id="ratingForm">
+  <label for="location">📍 Location</label>
+  <select id="location" required>
+    <option value="">-- Choose --</option>
+    <option>Sector 17 Plaza</option>
+    <option>ISBT Sector 43</option>
+    <option>Elante Mall</option>
+    <option>PGIMER Hospital</option>
+    <option>Rose Garden</option>
+    <option>Capitol Complex</option>
+    <option>Sukhna Lake</option>
+    <option>ISBT Sector 17</option>
+    <option>Government Museum</option>
+    <option>Rock Garden</option>
+  </select>
+
+  <label for="toilets">🚻 Toilets</label>
+  <small>Are toilets clean and usable?</small>
+  <select id="toilets" required>
+    <option value="">Rate 1-5</option>
+    <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+  </select>
+
+  <label for="cctv">📷 CCTV Surveillance</label>
+  <small>Is the area monitored by cameras?</small>
+  <select id="cctv" required>
+    <option value="">Rate 1-5</option>
+    <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+  </select>
+
+  <label for="accessibility">♿ Accessibility</label>
+  <small>Can persons with disabilities access the space safely?</small>
+  <select id="accessibility" required>
+    <option value="">Rate 1-5</option>
+    <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+  </select>
+
+  <label for="bins">🗑️ Garbage Bins</label>
+  <small>Are bins available and not overflowing?</small>
+  <select id="bins" required>
+    <option value="">Rate 1-5</option>
+    <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+  </select>
+
+  <label for="lighting">💡 Lighting</label>
+  <small>Is the area adequately lit at night?</small>
+  <select id="lighting" required>
+    <option value="">Rate 1-5</option>
+    <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+  </select>
+
+  <button type="submit">Submit Rating</button>
+</form>
+
+<script>
+  const form = document.getElementById("ratingForm");
+
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const data = {
+      location: document.getElementById("location").value,
+      toilets: document.getElementById("toilets").value,
+      cctv: document.getElementById("cctv").value,
+      accessibility: document.getElementById("accessibility").value,
+      bins: document.getElementById("bins").value,
+      lighting: document.getElementById("lighting").value
+    };
+
+    fetch("https://script.google.com/macros/s/AKfycbxk0N0gMQIUh3PQ93nMU2A5gK-HYe718ulSTNfvHN4Zro_hOco_KHrIIYtBwEEGB9cBhg/exec", {
+      method: "POST",
+      mode: "no-cors",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(data)
+    })
+    .then(() => {
+      alert("✅ Rating submitted successfully!");
+      form.reset();
+    })
+    .catch(error => {
+      alert("⚠️ Submission failed: " + error.message);
+    });
+  });
+</script>
+
+</body>
+</html>
