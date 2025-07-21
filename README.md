@@ -1,6 +1,6 @@
 
 
-# Civic Nest – A Grassroots Civic Feedback Platform
+# Civic Nest – Civic Feedback Platform
 
 **Civic Nest** is a simple yet powerful data collection prototype idea that I came up with on my own. It empowers citizens to rate public spaces based on key amenities like sanitation, safety, lighting, cleanliness and accessibility. It was designed to help city planners and local governments identify zones that need urgent improvement.
 
