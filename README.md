@@ -44,10 +44,4 @@
 * Supports inclusion by tracking **accessibility and safety**
 * Can be scaled **across Indian cities** with minimal infrastructure
 
----
 
-
-
----
-
-Would you like a **live link**, **screenshots**, or **demo GIF** section added next?
