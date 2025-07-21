@@ -2,23 +2,22 @@
 
 # Civic Nest – A Grassroots Civic Feedback Platform
 
-**Civic Nest** is a simple yet powerful civic-tech prototype that empowers citizens to rate public spaces based on key amenities like sanitation, safety, lighting, and accessibility. It is designed to help city planners and local governments identify high-performing areas and zones that need urgent improvement.
+**Civic Nest** is a simple yet powerful data collection prototype idea that I came up with on my own. It empowers citizens to rate public spaces based on key amenities like sanitation, safety, lighting, cleanliness and accessibility. It was designed to help city planners and local governments identify zones that need urgent improvement.
+
+
+##  Project Highlights
+
+*  **Anonymous Ratings** – No login needed; fast, one-click submissions
+*  **Public-Driven Insights** – Real feedback from on-ground citizens
+*  **Low-Code Stack** – Built with HTML, JavaScript, and Google Sheets backend
+*  **Civic Nest Zones** – Areas with consistently high ratings are flagged as model public spaces
 
 ---
 
-## 🌟 Project Highlights
-
-* ✅ **Anonymous Ratings** – No login needed; fast, one-click submissions
-* 🌍 **Public-Driven Insights** – Real feedback from on-ground citizens
-* 🧱 **Low-Code Stack** – Built with HTML, JavaScript, and Google Sheets backend
-* 🏆 **Civic Nest Zones** – Areas with consistently high ratings are flagged as model public spaces
-
----
-
-## 📌 How It Works
+##  How It Works
 
 1. Users visit the rating webpage
-2. Select a public place (e.g., Sukhna Lake, ISBT 17, Elante Mall)
+2. Select a famous public spot in Chandgarh (e.g., Sukhna Lake, ISBT 17, Elante Mall)
 3. Give 1–5 star ratings on key factors like:
 
    * Sanitation
