@@ -1,37 +1,44 @@
-Civic Nest – A Grassroots Civic Feedback Platform
-Civic Nest is a simple yet powerful civic-tech prototype that empowers citizens to rate public spaces based on key amenities like sanitation, safety, lighting, and accessibility. It is designed to help city planners and local governments identify high-performing areas and zones that need urgent improvement.
+ Civic Nest – A Grassroots Civic Feedback Platform
 
-🌟 Project Highlights
-✅ Anonymous Ratings – No login needed; fast, one-click submissions
+**Civic Nest** is a simple yet powerful civic-tech prototype that empowers citizens to rate public spaces based on key amenities like sanitation, safety, lighting, and accessibility. It is designed to help city planners and local governments identify high-performing areas and zones that need urgent improvement.
 
-🌍 Public-Driven Insights – Real feedback from on-ground citizens
 
-🧱 Low-Code Stack – Built with HTML, JavaScript, and Google Sheets backend
+## Project Highlights
 
-🏆 Civic Nest Zones – Areas with consistently high ratings are flagged as model public spaces
+* **Anonymous Ratings** – No login needed; fast, one-click submissions
+* **Public-Driven Insights** – Real feedback from on-ground citizens
+* **Low-Code Stack** – Built with HTML, JavaScript, and Google Sheets backend
+* **Civic Nest Zones** – Areas with consistently high ratings are flagged as model public spaces
 
-📌 How It Works
-Users visit the rating webpage
 
-Select a public place (e.g., Sukhna Lake, ISBT 17, Elante Mall)
 
-Give 1–5 star ratings on key factors like:
+## How It Works
 
-Sanitation
+1. Users visit the rating webpage
+2. Select a public place (e.g., Sukhna Lake, ISBT 17, Elante Mall)
+3. Give 1–5 star ratings on key factors like:
 
-Security
+   * Sanitation
+   * Security
+   * Lighting
+   * Accessibility
+   * Cleanliness
+4. The data is submitted to a central Google Sheet in real-time
 
-Lighting
 
-Accessibility
 
-Cleanliness
+## 🛠Tech Stack
 
-The data is submitted to a central Google Sheet in real-time
+* **Frontend:** HTML + CSS + JavaScript
+* **Backend:** Google Apps Script + Google Sheets
+* **Hosting:** GitHub Pages (free and public)
 
-🛠️ Tech Stack
-Frontend: HTML + CSS + JavaScript
+---
 
-Backend: Google Apps Script + Google Sheets
+## Potential Impact
 
-Hosting: GitHub Pages
+* Helps identify **neglected zones** needing civic improvement
+* Recognizes and promotes **well-maintained public spaces**
+* Supports inclusion by tracking **accessibility and safety**
+* Can be scaled **across Indian cities** with minimal infrastructure
+
